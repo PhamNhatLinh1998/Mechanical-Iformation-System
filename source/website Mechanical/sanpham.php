@@ -149,7 +149,7 @@
                   <div class="product">
                     <a href="index.php"><img src="img/may2.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3><a href="chtiet2.php">Máy gia công thanh cái DHY401 </a></h3>
+                      <h3><a href="chitiet2.php">Máy gia công thanh cái DHY401 </a></h3>
                       <p class="price"> 
                         <del></del>36.000.000đ
                       </p>

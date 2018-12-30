@@ -1,6 +1,6 @@
-<?php include('server.php') ?>
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE php>
+<php>
   <head>
     <meta charset="utf-8">
     <title>BHPassIO</title>
@@ -28,8 +28,8 @@
             <div class="col-lg-6 text-center text-lg-right">
               <ul class="menu list-inline mb-0">
                 <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Đăng Nhập</a></li>
-                <li class="list-inline-item"><a href="register.html">Đăng Kí</a></li>
-                <li class="list-inline-item"><a href="contact.html">Liên Hệ</a></li>
+                <li class="list-inline-item"><a href="register.php">Đăng Kí</a></li>
+                <li class="list-inline-item"><a href="contact.php">Liên Hệ</a></li>
               </ul>
             </div>
           </div>
@@ -42,7 +42,7 @@
                 <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
-                <form action="customer-orders.html" method="post">
+                <form action="customer-orders.php" method="post">
                   <div class="form-group">
                     <input id="email-modal" type="text" placeholder="Địa Chỉ Email" class="form-control">
                   </div>
@@ -54,102 +54,40 @@
                   </p>
                 </form>
                 <p class="text-center text-muted">Bạn Chưa Có Tài Khoản?</p>
-                <p class="text-center text-muted"><a href="register.html"><strong>Đăng Kí Nhanh ! </strong></a></p>
+                <p class="text-center text-muted"><a href="register.php"><strong>Đăng Kí Nhanh ! </strong></a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="index.html" class="navbar-brand home"><img src="img/logo.png" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Obaju logo" class="d-inline-block d-md-none"><span class="sr-only">Obaju - go to homepage</span></a>
-          <div class="navbar-buttons">
-            <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
-            <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
-          </div>
+        <div class="container"><a href="sanpham.php" class="navbar-brand home"><img src="img/logo1.jpg" alt="Obaju logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Obaju logo" class="d-inline-block d-md-none"></a>
+          
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="index.html" class="nav-link active">Trang Chủ</a></li>
-              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Mỹ Phẩm<b class="caret"></b></a>
+              <li class="nav-item"><a href="sanpham.php" class="nav-link active">Trang Chủ</a></li>
+              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Máy móc cơ khí<b class="caret"></b></a>
                 <ul class="dropdown-menu megamenu">
                   <li>
                     <div class="row">
                       <div class="col-md-6 col-lg-3">
-                        <h5><a href="matna.html" style="text-decoration:none" >Mặt Nạ</a></h5>
+                        <h5><a href="matna.php" style="text-decoration:none" >Máy móc cơ khí</a></h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="matna.html" class="nav-link">Nhật Bản</a></li>
-                          <li class="nav-item"><a href="matna.html" class="nav-link">Hàn Quốc</a></li>
-                          <li class="nav-item"><a href="matna.html" class="nav-link">Đài Loan</a></li>
+                          <li class="nav-item"><a href="matna.php" class="nav-link">Nhật Bản</a></li>
+                          <li class="nav-item"><a href="matna.php" class="nav-link">Hàn Quốc</a></li>
+                          
                         </ul>
                       </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5><a href="son.html" style="text-decoration:none" >Son</a></h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="son.html" class="nav-link">Son Lì</a></li>
-                          <li class="nav-item"><a href="son.html" class="nav-link">Son Nước</a></li>
-                          <li class="nav-item"><a href="son.html" class="nav-link">Son Kem</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5><a href="phannen.html" style="text-decoration:none" >Phấn Nền</a></h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="phannen.html" class="nav-link">Phấn Phủ</a></li>
-                          <li class="nav-item"><a href="phannen.html" class="nav-link">Phấn Nước</a></li>
-                          <li class="nav-item"><a href="phannen.html" class="nav-link">Kem Nền</a></li>
-                        </ul>
-					  </div>
-						<div class="col-md-6 col-lg-3">
-                        <h5><a href="kemduong.html" style="text-decoration:none" >Kem Dưỡng</a></h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="kemduong.html" class="nav-link">Kem chống nắng</a></li>
-                          <li class="nav-item"><a href="kemduong.html" class="nav-link">Kem dưỡng ẩm</a></li>
-                          <li class="nav-item"><a href="kemduong.html" class="nav-link">Tonner</a></li>
- 
-                        </ul>
-                      </div>
+                      
                     </div>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Nước Hoa<b class="caret"></b></a>
-                <ul class="dropdown-menu megamenu">
-                  <li>
-                    <div class="row">
-                      <div class="col-md-6 col-lg-3">
-                        <h5><a href="nhnam.html" style="text-decoration:none" >Nam</a></h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="nhnam.html" class="nav-link">Mỹ</a></li>
-                          <li class="nav-item"><a href="nhnam.html" class="nav-link">Pháp</a></li>
-                          <li class="nav-item"><a href="nhnam.html" class="nav-link">Ý</a></li>                      
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5><a href="nhnu.html" style="text-decoration:none" >Nữ</a></h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="nhnu.html" class="nav-link">Mỹ</a></li>
-                          <li class="nav-item"><a href="nhnu.html" class="nav-link">Pháp</a></li>
-                          <li class="nav-item"><a href="nhnu.html" class="nav-link">Ý</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <h5><a href="nhnamnu.html" style="text-decoration:none" >Nam & Nữ</a></h5>
-                        <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="nhnamnu.html" class="nav-link">Mỹ</a></li>
-                          <li class="nav-item"><a href="nhnamnu.html" class="nav-link">Pháp</a></li>
-                          <li class="nav-item"><a href="nhnamnu.html" class="nav-link">Ý</a></li>
-
-                        </ul>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <div class="banner"><a href="#"><img src="img/nuochoa.png" alt="" class="img img-fluid"></a></div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
+              
             </ul>
             <div class="navbar-buttons d-flex justify-content-end">
               <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only"></span><i class="fa fa-search"></i></a>
-              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>0 Sản Phẩm Trong Giỏ</span></a></div>
+              <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.php" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>Sản Phẩm Trong Giỏ</span></a></div>
             </div>
           </div>
         </div>
@@ -184,7 +122,7 @@
               <div class="box">
                 <h1>Tạo Tài Khoản Mới</h1>
                 <hr>
-                <form action="customer-orders.html" method="post">
+                <form action="customer-orders.php" method="post">
                   <div class="form-group">
                     <label for="name">Họ Và Tên</label>
                     <input id="name" type="text" class="form-control">
@@ -207,7 +145,7 @@
               <div class="box">
                 <h1>Đăng Nhập</h1>
                 <hr>
-                <form action="customer-orders.html" method="post">
+                <form action="customer-orders.php" method="post">
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input id="email" type="text" class="form-control">
@@ -232,35 +170,29 @@
           <div class="col-lg-3 col-md-6">
             <h4 class="mb-3">Trang</h4>
             <ul class="list-unstyled">
-              <li><a href="index.html">Trang Chủ</a></li>
-              <li><a href="contact.html">Liên Hệ Chúng Tôi</a></li>
+              <li><a href="index.php">Trang Chủ</a></li>
+              <li><a href="contact.php">Liên Hệ Chúng Tôi</a></li>
             </ul>
             <hr>
             <h4 class="mb-3">Người Dùng</h4>
             <ul class="list-unstyled">
               <li><a href="#" data-toggle="modal" data-target="#login-modal">Đăng Nhập</a></li>
-              <li><a href="register.html">Đăng Kí</a></li>
+              <li><a href="register.php">Đăng Kí</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
             <h4 class="mb-3">Danh Sách Sản Phẩm </h4>
-            <h5>Mỹ Phẩm</h5>
+            <h5>Các dòng máy cơ khí</h5>
             <ul class="list-unstyled">
-              <li><a href="matna.html">Mặt Nạ</a></li>
-              <li><a href="son.html">Son</a></li>
-              <li><a href="phanen.html">Phấn Nền</a></li>
-			  <li><a href="kemduong.html">Kem Dưỡng</a></li>
+              <li><a href="cokhi.php">Nhật Bản</a></li>
+              <li><a href="cokhi.php">Hàn Quốc</a></li>
+			  
             </ul>
-            <h5>Nước Hoa</h5>
-            <ul class="list-unstyled">
-              <li><a href="nhnam.html">Nam</a></li>
-              <li><a href="nhnu.html">Nữ</a></li>
-              <li><a href="nhnamnu.html">Nam và Nữ</a></li>
-            </ul>
+            
           </div>
           <div class="col-lg-3 col-md-6">
             <h4 class="mb-3">Địa Chỉ</h4>
-            <p>Hoàng Anh Gia Lai 3<br>Nguyễn Hữu Thọ<br>Quận 7<br>TP.Hồ Chí Minh<br><strong>Việt Nam</strong></p><a href="contact.html"></a>
+            <p>Hoàng Anh Gia Lai 3<br>Nguyễn Hữu Thọ<br>Quận 7<br>TP.Hồ Chí Minh<br><strong>Việt Nam</strong></p><a href="contact.php"></a>
             <hr class="d-block d-md-none">
           </div>
           <div class="col-lg-3 col-md-6">
@@ -295,4 +227,4 @@
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
   </body>
-</html>
+</php>
